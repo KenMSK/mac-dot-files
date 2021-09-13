@@ -115,12 +115,16 @@ zsh_custom_context() {
     local host="$(hostname)"
     local color='%F{white}'
 
-    [[ $host = "Jimmy-iMac" ]] && color='%F{192}'
+    [[ $host = "Ken-mbp.local" ]] && color='%F{192}'
     [[ $host = "Jimmy-Pro" ]] && color='%F{014}'
     [[ $host = "JA-MBP-181502" ]] && color='%F{013}'
     [[ $host = *"ip-"* ]] && color='%F{227}'
 
-    echo -n "%{$color%}$user@$host"
+    if [[ "$host" = "ken-mbp.local" ]]; then
+        echo -n "%{$color%}$user@$host"
+    else
+        echo -n "%{$color%}$user"
+    fi
 }
 
 POWERLEVEL9K_DIR_PATH_SEPARATOR="%F{025} \uE0B1 %F{black}"

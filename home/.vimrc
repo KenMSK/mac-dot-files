@@ -87,3 +87,5 @@ let g:syntastic_c_compiler_options = '-Wall -fopenmp -D__PATH__=""'
 let g:syntastic_cpp_compiler_options = '-Wall -fopenmp -D__PATH__=""'
 
 " let g:syntastic_shell = '/bin/bash'
+
+nnoremap <F12> :!clear && "%:p" <Enter>

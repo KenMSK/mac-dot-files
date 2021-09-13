@@ -1,11 +1,11 @@
 [user]
-	name = Jimmy Sinn
-	email = jimmyltsinn@gmail.com
+	name = Ken Ma
+	email = kenmashikin@gmail.com
 [color]
 	ui = true
 [core]
-	excludesfile = /Users/jimmy/.gitignore_global
-	attributesfile = /Users/jimmy/.gitattributes
+	excludesfile = /Users/ken/.gitignore_global
+	attributesfile = /Users/ken/.gitattributes
 	editor = vim
 	autocrlf = input
 [difftool "sourcetree"]
@@ -34,9 +34,11 @@
 	newNormal = green bold
 	newHighlight = green bold 22
 [commit]
-	template = /Users/jimmy/.stCommitMsg
+	template = /Users/ken/.stCommitMsg
 [filter "lfs"]
 	required = true
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
+[pull]
+	ff = only
